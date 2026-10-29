@@ -828,10 +828,10 @@ img {
 
 .hero-slider .carousel-item {
   position: relative;
-  min-height: min(88vh, 800px);
+  min-height: clamp(580px, 82vh, 760px);
   display: flex;
   align-items: center;
-  padding-block: clamp(4.5rem, 8vw, 7rem) clamp(4rem, 7vw, 6rem);
+  padding-block: clamp(4.5rem, 7vw, 6.5rem);
   color: #ffffff;
   overflow: hidden;
   background: var(--wc-navy-deep);
@@ -839,8 +839,14 @@ img {
 
 @media (max-width: 991.98px) {
   .hero-slider .carousel-item {
-    min-height: auto;
-    padding-block: clamp(3.5rem, 7vw, 5rem) clamp(3.5rem, 7vw, 5rem);
+    min-height: 560px;
+    padding-block: clamp(3.5rem, 6vw, 4.5rem);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-slider .carousel-item {
+    min-height: 520px;
   }
 }
 
@@ -890,12 +896,12 @@ img {
 .hero-slider h1,
 .hero-slider h2 {
   color: #ffffff;
-  max-width: 16ch;
+  max-width: 22ch;
   margin-bottom: 1.35rem;
 }
 
 .hero-slider .hero-copy {
-  max-width: 620px;
+  max-width: 640px;
   font-size: clamp(1.05rem, 0.98rem + 0.3vw, 1.22rem);
   color: rgba(255, 255, 255, 0.88);
   font-weight: 300;
