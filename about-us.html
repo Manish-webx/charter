@@ -29,7 +29,7 @@
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/executive-aircraft-apron-1600.webp" type="image/webp" imagesrcset="assets/img/executive-aircraft-apron-640.webp 640w, assets/img/executive-aircraft-apron-1024.webp 1024w, assets/img/executive-aircraft-apron-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.1.0">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,6 +53,23 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ SITE TOPBAR ============ -->
+  <div class="site-topbar">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div class="topbar-left d-flex align-items-center gap-3">
+        <span class="topbar-item"><span class="topbar-badge"><span class="pulse-dot"></span> 24/7 Operations</span> Worldwide Aviation Desk</span>
+        <span class="topbar-divider d-none d-md-inline" aria-hidden="true">•</span>
+        <span class="topbar-item d-none d-md-inline-flex align-items-center gap-1"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#geo-alt"></use></svg> Gurgaon, Haryana, India</span>
+      </div>
+      <div class="topbar-right d-flex align-items-center gap-3">
+        <a class="topbar-link" href="mailto:worldwidecharterservice@gmail.com"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#envelope"></use></svg> <span>worldwidecharterservice@gmail.com</span></a>
+        <span class="topbar-divider d-none d-lg-inline" aria-hidden="true">•</span>
+        <span class="topbar-item d-none d-lg-inline-flex align-items-center gap-1"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#shield-check"></use></svg> CIN: U77307HR2026PTC149008</span>
+      </div>
+    </div>
+  </div>
+  <!-- ============ /SITE TOPBAR ============ -->
 
   <!-- ============ SHARED HEADER (keep identical on every page; only the active link changes) ============ -->
   <header class="site-header">
@@ -92,7 +109,8 @@
             <li class="breadcrumb-item active" aria-current="page">About Us</li>
           </ol>
         </nav>
-        <h1 id="page-title">About Worldwide Charters Private Limited</h1>
+        <div class="mb-3"><span class="luxury-pill"><span class="pill-dot"></span> Private Aviation Leadership</span></div>
+        <h1 id="page-title">About <span class="gold-gradient-text">Worldwide Charters</span></h1>
         <p>An aviation-focused company working toward dependable transportation solutions, operational excellence, and long-term business partnerships.</p>
       </div>
     </section>
@@ -334,7 +352,7 @@
           </div>
           <div class="col-lg-5">
             <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-              <a class="btn btn-light btn-lg" href="contact-us.html#enquiry">Contact Our Team</a>
+              <a class="btn btn-gold btn-lg" href="contact-us.html#enquiry">Contact Our Team</a>
               <a class="btn btn-outline-light btn-lg" href="contact-us.html?service=partnership#enquiry">Discuss a Partnership</a>
             </div>
           </div>
@@ -381,15 +399,15 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
         <p class="mb-0">&copy; <span data-year>2026</span> Worldwide Charters Private Limited. All rights reserved.</p>
-        <p class="mb-0">CIN: U77307HR2026PTC149008</p>
+        <p class="mb-0 footer-cin">CIN: U77307HR2026PTC149008</p>
       </div>
     </div>
   </footer>
   <!-- ============ /SHARED FOOTER ============ -->
 
   <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/main.js?v=1.0.0" defer></script>
+  <script src="assets/js/main.js?v=2.1.0" defer></script>
 </body>
 </html>

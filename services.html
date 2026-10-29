@@ -29,7 +29,7 @@
   <link rel="preload" href="assets/fonts/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/wing-above-clouds-1600.webp" type="image/webp" imagesrcset="assets/img/wing-above-clouds-640.webp 640w, assets/img/wing-above-clouds-1024.webp 1024w, assets/img/wing-above-clouds-1600.webp 1600w, assets/img/wing-above-clouds-2000.webp 2000w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css?v=1.0.0">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.1.0">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -53,6 +53,23 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ SITE TOPBAR ============ -->
+  <div class="site-topbar">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <div class="topbar-left d-flex align-items-center gap-3">
+        <span class="topbar-item"><span class="topbar-badge"><span class="pulse-dot"></span> 24/7 Operations</span> Worldwide Aviation Desk</span>
+        <span class="topbar-divider d-none d-md-inline" aria-hidden="true">•</span>
+        <span class="topbar-item d-none d-md-inline-flex align-items-center gap-1"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#geo-alt"></use></svg> Gurgaon, Haryana, India</span>
+      </div>
+      <div class="topbar-right d-flex align-items-center gap-3">
+        <a class="topbar-link" href="mailto:worldwidecharterservice@gmail.com"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#envelope"></use></svg> <span>worldwidecharterservice@gmail.com</span></a>
+        <span class="topbar-divider d-none d-lg-inline" aria-hidden="true">•</span>
+        <span class="topbar-item d-none d-lg-inline-flex align-items-center gap-1"><svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#shield-check"></use></svg> CIN: U77307HR2026PTC149008</span>
+      </div>
+    </div>
+  </div>
+  <!-- ============ /SITE TOPBAR ============ -->
 
   <!-- ============ SHARED HEADER (keep identical on every page; only the active link changes) ============ -->
   <header class="site-header">
@@ -92,9 +109,10 @@
             <li class="breadcrumb-item active" aria-current="page">Services</li>
           </ol>
         </nav>
-        <h1 id="page-title">Our Aviation Services</h1>
+        <div class="mb-3"><span class="luxury-pill"><span class="pill-dot"></span> Full-Spectrum Aviation Solutions</span></div>
+        <h1 id="page-title">Our <span class="gold-gradient-text">Aviation Services</span></h1>
         <p>Explore aviation-related transportation, leasing, asset management, and infrastructure solutions designed around business requirements.</p>
-        <a class="btn btn-light btn-lg" href="contact-us.html#enquiry">Discuss Your Requirements <svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#arrow-right"></use></svg></a>
+        <a class="btn btn-gold btn-lg" href="contact-us.html#enquiry">Discuss Your Requirements <svg class="bi" aria-hidden="true"><use href="assets/img/icons.svg#arrow-right"></use></svg></a>
       </div>
     </section>
 
@@ -403,8 +421,8 @@
           </div>
           <div class="col-lg-5">
             <div class="d-flex flex-wrap gap-3 justify-content-lg-end">
-              <a class="btn btn-light btn-lg" href="contact-us.html">Contact Our Team</a>
-              <a class="btn btn-outline-light btn-lg" href="contact-us.html#enquiry">Submit an Enquiry</a>
+              <a class="btn btn-gold btn-lg" href="contact-us.html#enquiry">Submit an Enquiry</a>
+              <a class="btn btn-outline-light btn-lg" href="contact-us.html">Contact Our Team</a>
             </div>
           </div>
         </div>
@@ -450,15 +468,15 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
         <p class="mb-0">&copy; <span data-year>2026</span> Worldwide Charters Private Limited. All rights reserved.</p>
-        <p class="mb-0">CIN: U77307HR2026PTC149008</p>
+        <p class="mb-0 footer-cin">CIN: U77307HR2026PTC149008</p>
       </div>
     </div>
   </footer>
   <!-- ============ /SHARED FOOTER ============ -->
 
   <script src="assets/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/js/main.js?v=1.0.0" defer></script>
+  <script src="assets/js/main.js?v=2.1.0" defer></script>
 </body>
 </html>

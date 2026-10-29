@@ -66,4 +66,15 @@
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = String(new Date().getFullYear());
   });
+
+  // Hero carousel initialization (if present).
+  var heroCarousel = document.getElementById('heroCarousel');
+  if (heroCarousel && window.bootstrap && window.bootstrap.Carousel) {
+    window.bootstrap.Carousel.getOrCreateInstance(heroCarousel, {
+      interval: 6500,
+      ride: 'carousel',
+      pause: 'hover',
+      wrap: true
+    });
+  }
 })();
