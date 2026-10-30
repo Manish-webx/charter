@@ -2208,6 +2208,12 @@ p.statement-text {
   align-items: flex-start;
 }
 
+/* Let the items shrink so the long email can wrap on small phones */
+.contact-list li,
+.contact-list li > div {
+  min-width: 0;
+}
+
 .contact-icon {
   width: 3.4rem;
   height: 3.4rem;
@@ -2505,7 +2511,8 @@ p.statement-text {
 }
 
 .footer-contact a,
-.contact-list a {
+.contact-list a,
+.privacy-box a {
   overflow-wrap: break-word;
 }
 
